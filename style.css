@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+.h1_title {
+  font-family: "Roboto", serif;
+  text-align: center;
+}
+.sketch-area {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30%;
+}
+.sketch-div {
+  background-color: rgba(255, 255, 22);
+  opacity: 0.1;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
