@@ -2,7 +2,7 @@ const sketchArea = document.querySelector(".sketch-area");
 const buttonContainer = document.querySelector(".color-pick-area");
 
 let defaultColor = "#ffffff";
-let color = "rgb(222 208 16)";
+let color = "rgb(222, 208, 16)";
 
 const createSketchArea = (amountX, amountY) => {
   let totalAmount = Math.floor(amountX * amountY);
@@ -26,12 +26,8 @@ sketchArea.addEventListener("mouseover", (e) => {
       // Change color and reset opacity if color is different
       e.target.style.backgroundColor = color;
       e.target.style.opacity = 0.1;
-      console.log(`if  currentBGColor ${currentBgColor}`);
-      console.log(`if color ${color}`);
-      console.log(`if ${targetOpacity}`);
     } else if (targetOpacity < 1) {
       e.target.style.opacity = targetOpacity + 0.1;
-      console.log(`else if ${targetOpacity}`);
     }
   }
 });
